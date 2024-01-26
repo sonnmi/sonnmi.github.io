@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c791eb97.css",
+    "main.js": "/static/js/main.2ba97520.js",
+    "static/media/girl2.png": "/static/media/girl2.9d78594ad4187af68569.png",
+    "static/media/girl.png": "/static/media/girl.cf2e3c2b09c4c845ba6e.png",
+    "static/media/resume.pdf": "/static/media/resume.ea549b6d874f81e068f8.pdf",
+    "static/media/uoft.png": "/static/media/uoft.7c6b5c977c496cae35b4.png",
+    "static/media/taq-icon.png": "/static/media/taq-icon.f62c26f197b12adbdb42.png",
+    "static/media/menubar.svg": "/static/media/menubar.f0a0f67e5762d66d066aea7aa9caa163.svg",
+    "index.html": "/index.html",
+    "main.c791eb97.css.map": "/static/css/main.c791eb97.css.map",
+    "main.2ba97520.js.map": "/static/js/main.2ba97520.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c791eb97.css",
+    "static/js/main.2ba97520.js"
+  ]
+}
