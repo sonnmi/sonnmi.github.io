@@ -1,0 +1,59 @@
+
+.contact__container {
+    height: 100vh;
+    display: flex;
+    padding: 120px 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .contact__content__container {
+        margin-right: 30px;
+        text-align: center;
+        span {
+            margin: 30px 40px;
+            font-size: 48px;
+            font-weight: 600;
+            top: 0;
+            background-clip: text;
+            background-image: linear-gradient(90deg, #ffdfbc, #f698ca,#8d71ff);
+            color: transparent;
+        }
+        .contact__3d__image {
+            background-image: url(../../image/girl2.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 400px;
+            width: 100%;
+        }
+    }
+    .get__in__touch__container {
+        background-color: black;
+        width: 520px;
+        height: 420px;
+        margin-left: 100px;
+        overflow: hidden;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 40px;
+        word-spacing: 2px;
+        padding: 30px 30px;
+        letter-spacing: 1px;
+        color: rgb(230, 214, 233);
+
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid transparent;
+        border-radius: 20px;
+        p{
+            font-size: 18px;
+        }
+
+        .icon__title {
+            margin: 10px 60px;
+            display: flex;
+            justify-content: space-between;
+            .icon { 
+                // padding-top: 1px;
+            }
+        }
+    }
+}

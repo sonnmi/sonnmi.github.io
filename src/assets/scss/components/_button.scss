@@ -1,0 +1,122 @@
+.generate-button {
+    padding: 10px;
+    width: 170px;
+  border: none;
+  border-radius: 10px;
+  background-blend-mode: overlay, normal;
+  background-color: #1D1D1D;
+  cursor: pointer;
+  z-index: 1;
+  transform: scale(var(--generate-button-scale, 1)) translateZ(0);
+  // box-shadow: 0px 0px 120px var(--generate-button-shadow-wide, transparent), 0px 4px 12px rgba(0, 0, 0, 0.05), 0px 1px 2px rgba(0, 0, 0, 0.1), inset 0px 1px 1px var(--generate-button-shadow-inset, rgba(255, 255, 255, 0.04)), 0 0 0 var(--generate-button-shadow-outline, 0px) rgba(109, 68, 244, 0.4);
+  transition: transform .3s, background-color .3s, box-shadow .3s, color .3s;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 20%;
+    height: 20px;
+    left: 20%;
+    bottom: -10px;
+    background: #f8aaea;
+    filter: blur(12.5px);
+    z-index: 2;
+    clip-path: inset(-200% -30% 10px -30% round 29px);
+    opacity: 0;
+    transition: opacity .4s;
+    transform: translateZ(0);
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+
+    &:before {
+      content: '';
+      background-image: linear-gradient(to right, transparent, #1D1D1D);
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      opacity: .4;
+      transition: opacity .4s;
+    }
+  }
+
+  .stroke {
+    // mix-blend-mode: hard-light;
+
+    svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke-width: .8px;
+      stroke: #E2D9FF;
+      stroke-dasharray: 1.5 14;
+      stroke-dashoffset: 22;
+      opacity: 0;
+      overflow: visible;
+    }
+  }
+    
+  
+
+  &:hover {
+    --generate-button-scale: 1.1;
+    --generate-button-shadow-wide: rgba(208, 173, 255, 0.4);
+    --generate-button-shadow-inset: rgba(255, 255, 255, 0.35);
+    --generate-button-shadow-outline: 3px;
+
+    color: #fff;
+
+    .stroke {
+      svg {
+        animation: stroke 3s linear infinite;
+
+      stroke-dasharray: 1.5 14;
+      stroke-dashoffset: 18;
+      }svg {
+      fill: none;
+      stroke-width: .5px;
+      stroke: #fdd5ff;
+      stroke-dasharray: 1.5 14;
+      stroke-dashoffset: 16;
+
+      &:nth-child(2) {
+        stroke-width: 1px;
+        stroke-opacity: .5;
+        filter: blur(3px);
+      }
+    }
+    }
+
+    &:before {
+        opacity: 1;
+    }
+
+  }
+}
+
+@keyframes stroke {
+  0% {
+    opacity: 0;
+  }
+
+  25%,
+  75% {
+    opacity: 1;
+  }
+
+  95%,
+  100% {
+    stroke-dashoffset: 10;
+    opacity: 0;
+  }
+}
+

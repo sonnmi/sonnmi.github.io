@@ -1,0 +1,56 @@
+.header__container {
+    height: 100vh;
+    padding: 180px 120px;
+
+    .header__contents {
+        padding: 20px;
+        width: 100%;
+        letter-spacing: 1.5px;
+
+        .header__title {
+            font-weight: 800;
+            font-size: 87px;
+            background-clip: text;
+            background-image: linear-gradient(30deg, #eb9090, #CC51D6, #5A68E8, #E1B1FF, #b1feff);
+            color: transparent;
+            margin-top: 80px;
+            padding-bottom: 60px;
+        }
+        .header__desc {
+            font-weight: 600;
+            font-size: 24px;
+            background-clip: text;background-image: linear-gradient(30deg, #eb9090, #CC51D6, #5A68E8, #E1B1FF,  #0e2398, #b1feff);
+            color: transparent;
+            line-height: 35px;
+        }
+    }
+
+    .header__btns {
+        padding: 60px 20px;
+        display: flex;
+        width: 412px;
+        text-align: center;
+        color: white;
+        justify-content: space-between;
+
+
+        .learn__more {
+            // background-image: linear-gradient(30deg, #eb9090, #CC51D6, #5A68E8, #E1B1FF, #b1feff);background: linear-gradient(10deg, #000 32.69%, #263271 93.16%);
+            background: linear-gradient(180deg, rgba(254, 200, 241, 0.90) -22.92%, rgba(254, 200, 241, 0.00) 26.73%), radial-gradient(137.13% 253.39% at 76.68% 66.67%, #602EA6 0%, #C977D6 100%);
+            box-shadow: 0px 10px 30px 0px rgba(208, 113, 234, 0.5), 0px 0px 5px 0px #9623c0 inset, 0px -1px 8px 0px #c28dff inset;
+
+            &:hover {
+                -webkit-box-shadow: 0 0 30px #a45ef4;
+            }
+        }
+        .download__cv {
+            background: linear-gradient(180deg, rgba(254, 200, 241, 0.90) -22.92%, rgba(237, 146, 215, 0.00) 26.73%), radial-gradient(281.59% 122.01% at 96.89% 70.83%, #F69EA3 0%, #E970C4 100%);
+            box-shadow: 0px 10px 30px 0px rgba(234, 113, 197, 0.50), 0px 0px 5px 0px #FFACE4 inset, 0px -1px 8px 0px #efbeff inset;
+
+            text-shadow: 10px 10px 20px rgba(93, 20, 77);
+            &:hover {
+                -webkit-box-shadow: 0 0 30px #f78cd3;
+            }
+        }
+    }
+}

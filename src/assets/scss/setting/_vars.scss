@@ -1,0 +1,39 @@
+:root {
+    --main-font: "Montserrat";
+  
+    --bgColor: linear-gradient(to bottom, #263271, #070c24, var(--black));
+  
+    --white: #fff;
+    --black: #000;
+    --black100: #2b2b2b;
+    --black200: #434343;
+    --black300: #686868;
+    --black400: #e0e0e0;
+
+    --blue300: #263271;
+    --blue400: #121b47;
+    --blue500: #070c26;
+
+
+    --purple100: #aa71cd;
+    --purple200: #8342ab;
+    --purple300: #66298b;
+    --purple400: #501B71;
+    --purple500: #2a0b3e;
+  
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
