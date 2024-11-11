@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ff6c391.css",
-    "main.js": "/static/js/main.d5ef1add.js",
+    "main.css": "/static/css/main.b92c9b7a.css",
+    "main.js": "/static/js/main.2acf53a8.js",
     "static/media/Myoutube.png": "/static/media/Myoutube.9103008b9ef08c667c21.png",
     "static/media/girl2.png": "/static/media/girl2.9d78594ad4187af68569.png",
-    "static/media/girl.png": "/static/media/girl.cf2e3c2b09c4c845ba6e.png",
     "static/media/resume.pdf": "/static/media/resume.ea549b6d874f81e068f8.pdf",
-    "static/media/uoft.png": "/static/media/uoft.7c6b5c977c496cae35b4.png",
+    "static/media/uoft.png": "/static/media/uoft.90852f82d39e65cee6cc.png",
     "static/media/taq-icon.png": "/static/media/taq-icon.f62c26f197b12adbdb42.png",
+    "static/media/star1.png": "/static/media/star1.23004bc20980b2398f51.png",
+    "static/media/star3.png": "/static/media/star3.609a0aeab41c15af65de.png",
+    "static/media/play_btn.png": "/static/media/play_btn.9285a467b1626686bc83.png",
+    "static/media/play_btn_hover.png": "/static/media/play_btn_hover.93aa78c6921b1dfa1a86.png",
     "static/media/menubar.svg": "/static/media/menubar.f0a0f67e5762d66d066aea7aa9caa163.svg",
     "index.html": "/index.html",
-    "main.6ff6c391.css.map": "/static/css/main.6ff6c391.css.map",
-    "main.d5ef1add.js.map": "/static/js/main.d5ef1add.js.map"
+    "main.b92c9b7a.css.map": "/static/css/main.b92c9b7a.css.map",
+    "main.2acf53a8.js.map": "/static/js/main.2acf53a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ff6c391.css",
-    "static/js/main.d5ef1add.js"
+    "static/css/main.b92c9b7a.css",
+    "static/js/main.2acf53a8.js"
   ]
 }
