@@ -30,7 +30,7 @@ function Home() {
   }, 100)
   return (
     <>
-        <Header />
+        <Header activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
         <Menu activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
         <About />
         <Projects />

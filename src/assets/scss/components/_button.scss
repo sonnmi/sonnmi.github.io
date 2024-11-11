@@ -1,6 +1,6 @@
 .generate-button {
-    padding: 10px;
-    width: 170px;
+  padding: 10px;
+  width: 170px;
   border: none;
   border-radius: 10px;
   background-blend-mode: overlay, normal;
@@ -120,3 +120,16 @@
   }
 }
 
+@media (min-width: 1420px) {
+    .generate-button {
+      width: 240px;
+      padding: 12px;
+    }
+}
+
+@media (max-width: 896px) {
+    .generate-button {
+      width: 140px;
+      padding: 8px;
+    }
+}
