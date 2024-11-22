@@ -23,17 +23,17 @@ function Contact( { exploreVisible } ) {
         </div>
         <div className='method__container'>
           <div className='method'>
-            <a href = "mailto: yes.som.son@gmail.com" className='icon__title'>
+            <a href = "mailto: yes.som.son@gmail.com" target="_blank" rel="noopener noreferrer" className='icon__title'>
                 <span className='icon email'><MdOutlineMail size={20}/></span>
             </a>
           </div>
           <div className='method'>
-            <a href = "https://www.linkedin.com/in/yesom-son/" className='icon__title'>
+            <a href = "https://www.linkedin.com/in/yesom-son/" target="_blank" rel="noopener noreferrer" className='icon__title'>
                 <span className='icon LinkedIn'><FaLinkedinIn size={20}/></span>
             </a>
           </div>
           <div className='method'>
-            <a href = "https://github.com/sonnmi" className='icon__title'>
+            <a href = "https://github.com/sonnmi" target="_blank" rel="noopener noreferrer" className='icon__title'>
                 <span className='icon github'><TbBrandGithubFilled size={24}/></span>
             </a>
           </div>

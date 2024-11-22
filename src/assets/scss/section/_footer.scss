@@ -18,6 +18,7 @@
             width: 92px;
             display: flex;
             overflow: hidden;
+            z-index: 10;
             justify-content: space-between;
             .icon { 
                 padding-top: 1px;
@@ -26,6 +27,7 @@
     }
     p {
         color: #868686;
+        z-index: 10;
     }
 }
 

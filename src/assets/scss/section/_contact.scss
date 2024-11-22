@@ -40,6 +40,7 @@
         
         .icon__title {
             width: 100%;
+            z-index: 10;
             .icon {
               width: 48px;
               height: 48px;
@@ -96,9 +97,11 @@
         p {
           font-size: 18px;
           color: #e1e1e1;
+          z-index: 10;
         }
         
         h2, span {
+          z-index: 10;
           background-clip: text;
           font-size: 3rem;
           font-weight: 600;

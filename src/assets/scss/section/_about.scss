@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 70px;
+    z-index: 10;
 
     .about__profile__container {
         display: flex;
@@ -82,6 +83,7 @@
         width: 100%;
         justify-content: center;
         height: 100%;
+          z-index: 10;
         span {
             letter-spacing: 1px;
             font-size: 1.4rem;
@@ -178,10 +180,6 @@
 
 
 @media (min-width: 1420px) {
-    .image__3d {
-        width: 250px;
-    }
-    
     .about__desc__container span {
             font-size: 7rem;
         }

@@ -1,5 +1,4 @@
 .header__container {
-    // padding: 10rem 6rem;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -10,11 +9,12 @@
         width: 100%;
     }
     .header__contents {
-        // padding: 20px;
         width: 100%;
         letter-spacing: 1.5px;
 
         .header__title {
+            position: relative;
+            z-index: 10;
             display: flex;
             flex-direction: row;
             font-weight: 800;
@@ -41,6 +41,8 @@
             }
         }
         .header__desc {
+            position: relative;
+            z-index: 10;
             font-weight: 500;
             font-size: 1.4rem;
             background-clip: text;
@@ -132,7 +134,7 @@
                 align-items: center;
                 .first-line {
                     justify-content: flex-start;
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.2rem;
                 }
             }
             .header__desc {
@@ -178,10 +180,6 @@
                 font-size: 5.8rem;
                 text-transform: capitalize;
             }
-            // .header__desc {
-            //     font-size: 1.2rem;
-            //     line-height: 2.1rem;
-            // }
         }
     }
 }
@@ -197,10 +195,6 @@
                 font-size: 4.5rem;
                 text-transform: capitalize;
             }
-            // .header__desc {
-            //     font-size: 1.2rem;
-            //     line-height: 2.1rem;
-            // }
         }
     }
 }
