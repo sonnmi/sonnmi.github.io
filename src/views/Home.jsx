@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Header from '../components/section/Header';
 import About from '../components/section/About';
 import Menu from '../components/section/Menu';
@@ -7,8 +7,11 @@ import Contact from '../components/section/Contact';
 import Footer from '../components/section/Footer';
 import { menuNav } from '../components/data/menu'
 import { useEffect } from 'react';
+import { Cursor } from "../components/cursor/Cursor";
 
 function Home() {
+  const [hover, setHover] = useState(false);
+  const moonRef = useRef()
   const [activeMenu, setActiveMenu] = useState(window.location.href.split('/').slice(-1)[0].length > 0 ? window.location.href.split('/').slice(-1)[0] : '#home');
   const [y, setY] = useState(window.scrollY)
   useEffect(()=> {
@@ -30,12 +33,14 @@ function Home() {
   }, 100)
   return (
     <>
-        <Header activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
-        <Menu activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
-        <About />
-        <Projects />
-        <Contact />
-        <Footer activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
+      <Cursor hover={hover}></Cursor>
+      <div className='body-background'></div>
+      <Header activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
+      <Menu activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
+      <About />
+      <Projects setHover={setHover}/>
+      <Contact exploreVisible={hover}/>
+      <Footer activeMenu={activeMenu} setActiveMenu={setActiveMenu}/>
     </>
   )
 }

@@ -15,10 +15,10 @@ function Header( { activeMenu, setActiveMenu } ) {
       <div className='container__content'>
       <div className='header__contents'>
         <div className='header__title'>
-          <Moon/>Hi, I am Yesom.
+          <div className='first-line'><Moon/><div className='mobile-hidden'>Hi,</div> I am</div> Yesom.
         </div>
-        <div className='header__desc'>Aspiring Full-Stack Developer Creating Robust, Scalable Web Applications</div>
-        <div className='header__desc'>I build high-performing, user-friendly software that makes a meaningful impact</div>
+        <div className='header__desc'><div className='first-line'>Aspiring Full-Stack Developer</div> Creating Robust, Scalable Applications</div>
+        <div className='header__desc'><div className='mobile-hidden'>I build high-performing, user-friendly software that makes a meaningful impact</div></div>
       </div>
       <div className='header__btns'>
         <a href={resume} download='yesomSon_resume' className='resume__btn'>

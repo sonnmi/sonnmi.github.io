@@ -6,7 +6,7 @@
     justify-content: flex-end;
     min-height: 100vh; // instead of height: 100vh to not overlap when resizing
     .container__content {
-        margin: 7%;
+        margin: 4% 7%;
         width: 100%;
     }
     .header__contents {
@@ -15,26 +15,37 @@
         letter-spacing: 1.5px;
 
         .header__title {
-            div {
-                padding-right: 20px;
-            }
+            display: flex;
+            flex-direction: row;
             font-weight: 800;
-            font-size: 5rem;
+            font-size: 6rem;
             width: 100%;
             background-clip: text;
             background-image: linear-gradient(38deg, #b5f1f6, #feb8b8, #CC51D6, #5A68E8, #354edb, #1f34aa);
             color: transparent;
             margin-top: 80px;
-            padding-bottom: 24px;
+            padding-bottom: 2.4rem;
             display: flex;
             align-items: center;
+            .moon {
+                width: 5.2rem;
+                height: 5.2rem;
+                margin-right: 10px;
+            }
+            .first-line {
+                display: flex;
+                align-items: center;
+            }
+            div {
+                padding-right: 20px;
+            }
         }
         .header__desc {
             font-weight: 500;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             background-clip: text;
             font-family: Arial, Helvetica, sans-serif;
-            letter-spacing: 1.4px;
+            letter-spacing: 2px;
             background-image: linear-gradient(30deg, #edfdff, #ffd3d3,  #eab0e9,  #a99df7, #6b81fa, #4960e6,);
             color: transparent;
             line-height: 2.2rem;
@@ -72,7 +83,7 @@
     }
 }
 
-@media (min-width: 1420px) {
+@media (min-width: 1380px) {
     .header__container {
         .header__btns {
             font-size: 1.5rem;
@@ -81,17 +92,20 @@
     }
     .header__container {
         .header__contents {
-            .moon {
-                width: 80px;
-                height: 80px;
-                margin-right: 20px;
-            }
             .header__title {
+                .moon {
+                    width: 90px;
+                    height: 90px;
+                    margin-right: 10px;
+                }
                 font-weight: 800;
-                font-size: 6.4rem;
-                padding-bottom: 70px;
+                font-size: 7rem;
+                padding-bottom: 64px;
                 display: flex;
                 align-items: center;
+                .first-line {
+                    margin-right: 10px;
+                }
             }
             .header__desc {
                 line-height: 3.4rem;
@@ -102,11 +116,8 @@
     }
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1170px) {
     .header__container {
-        .container__content {
-            margin: 8%;
-        }
         .header__contents {
             .moon {
                 width: 50px;
@@ -114,34 +125,36 @@
             }
             .header__title {
                 font-weight: 800;
-                font-size: 4.2rem;
+                font-size: 6.4rem;
                 padding-bottom: 55px;
-                display: flex;
+                line-height: 6.4rem;
+                display: block;
                 align-items: center;
+                .first-line {
+                    justify-content: flex-start;
+                    margin-bottom: 1rem;
+                }
             }
             .header__desc {
-                font-size: 1.2rem;
-                line-height: 35px;
+                .mobile-hidden {
+                    display: none;
+                }
             }
-        }
-        .header__btns {
-            padding: 50px 20px 50px 0;
         }
     }
 }
 
-@media (max-width: 896px) {
-    .header__btns {
-        font-size: 0.8rem;
-        width: 200px;
-    }
+@media (max-width: 876px) {
     .header__container {
-        .container__content {
-            margin: 12% 10%;
-        }
         .header__contents {
             .header__title {
-                font-size: 3.2rem;
+                .moon {
+                    width: 4.21rem;
+                    height: 4.21rem;
+                }
+                font-size: 6rem;
+                padding-bottom: 5px;
+                line-height: 6rem;
             }
             .header__desc {
                 font-size: 1.4rem;
@@ -151,23 +164,43 @@
     }
 }
 
-@media (max-width: 594px) {
+@media (max-width: 564px) {
+    .mobile-hidden {
+        display: none;
+    }
     .header__container {
-        .container__content {
-            margin: 20% 8%;
-        }
         .header__contents {
-            .moon {
-                width: 40px;
-                height: 40px;
-            }
             .header__title {
-                font-size: 2.18rem;
+                .moon {
+                    width: 64px;
+                    height: 64px;
+                }
+                font-size: 5.8rem;
+                text-transform: capitalize;
             }
-            .header__desc {
-                font-size: 1.2rem;
-                line-height: 2.1rem;
+            // .header__desc {
+            //     font-size: 1.2rem;
+            //     line-height: 2.1rem;
+            // }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .header__container {
+        .header__contents {
+            .header__title {
+                .moon {
+                    width: 48px;
+                    height: 48px;
+                }
+                font-size: 4.5rem;
+                text-transform: capitalize;
             }
+            // .header__desc {
+            //     font-size: 1.2rem;
+            //     line-height: 2.1rem;
+            // }
         }
     }
 }

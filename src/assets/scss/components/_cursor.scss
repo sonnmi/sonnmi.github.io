@@ -1,0 +1,16 @@
+.mouse__cursor {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: rgb(255, 254, 230);
+    box-shadow: 0 0 0 6px rgba(249, 249, 219, 0.1),0 0 15px rgba(198, 202, 255, 0.1);
+    filter: drop-shadow( 0 0 2px #fff) drop-shadow( 0 0 4px #f9ff8f) drop-shadow( 0 0 5px #c500c2);
+    // animation: moon-shadow 2.5s ease-in-out infinite alternate;
+    position: fixed;
+    z-index: 10001;
+    pointer-events: none;
+}
+
+.mouse__cursor.hover {
+    filter: drop-shadow( 0 0 14px #fff) drop-shadow( 0 0 20px #8ff4ff) drop-shadow( 0 0 15px #1f2742);
+}

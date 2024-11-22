@@ -58,3 +58,9 @@
         }
     }
 }
+
+@media (max-width: 876px) {
+    .menu__container {
+        display: none;
+    }
+}

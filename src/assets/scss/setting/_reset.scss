@@ -21,7 +21,6 @@ h5,
 h6,
 input,
 legend,
-li,
 ol,
 p,
 select,
@@ -51,11 +50,12 @@ a:focus {
     color: inherit;
     text-decoration: none;
 }
+
 html, body {
     scroll-behavior: smooth;
-    min-width: 100vw;
     width: 100vw;
-    // overflow-x: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0;
 }
 
@@ -66,10 +66,6 @@ h4,
 h5,
 h6 {
     font-weight: normal;
-}
-
-ul {
-    list-style: none;
 }
 
 em,
@@ -87,16 +83,16 @@ img {
 }
 
 /**/
-body {
+body, html {
+  z-index: 10;
     overscroll-behavior: none;
     background: var(--bgColor) no-repeat;
-    min-height: 130vh;
+    min-height: 100vh;
     min-width: 100vw;
     width: 100vw;
     background-attachment: fixed;
     color: white;
     user-select: none;
-    overflow-x: hidden;
     margin: 0;
 }
 

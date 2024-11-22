@@ -7,16 +7,16 @@
     width: 100%;
     display: block;
 }
-.star1 {
+.star3 {
     position: fixed;
     background-image: url(../../image/background/star3.png);
-    animation: star-animation 10s ease-out infinite alternate;
+    animation: star-forward-animation 7s ease-out infinite alternate;
     background-size: contain;
     width: 100%;
     height: 40%;//300px;
     opacity: 20%;
 }
-.star2 {
+.star1 {
     position: fixed;
     background-image: url(../../image/background/star1.png);
     width: 100%;
@@ -24,9 +24,30 @@
     /* width: 100px;
     height: 100px; */
     background-size: contain;
-    animation: star-animation 7s ease-in-out infinite;
+    animation: star-backward-animation 7s ease-in-out infinite;
 }
-@keyframes star-animation {
+.star2 {
+    position: fixed;
+    background-image: url(../../image/background/star2.png);
+    width: 100%;
+    height: 40%;//300px;
+    /* width: 100px;
+    height: 100px; */
+    background-size: contain;
+    animation: star-backward-animation 4s ease-in-out infinite;
+}
+
+.star4 {
+    position: fixed;
+    background-image: url(../../image/background/star5.png);
+    width: 100%;
+    height: 40%;//300px;
+    /* width: 100px;
+    height: 100px; */
+    background-size: contain;
+    animation: star-forward-animation 4s ease-in-out infinite;
+}
+@keyframes star-forward-animation {
     0% {
         opacity: 0;
     }
@@ -44,6 +65,24 @@
     }
 }
 
+@keyframes star-backward-animation {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 50%;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .background-moon {
     top: 10%;
     /* top: 100px;  */
@@ -57,7 +96,6 @@
     background-color: rgb(255, 254, 230);
     box-shadow: 0 0 0 6px rgba(249, 249, 219, 0.1),0 0 15px rgba(198, 202, 255, 0.1);
     animation: svg-shadow 3.5s ease-in-out infinite alternate;
-    /* position: fixed; */
 }
 .moon-container {
     z-index: 10;
@@ -140,25 +178,9 @@
     
 }
 
-.tree {
-    // position: absolute;
-    // bottom: 0;
-    // right: -60%;
-    // background-image: url(../../image/background/tree.png);
-    // background-size: contain;
-    // background-repeat: no-repeat;
-    // width: 100%;
-    // z-index: -1;
-    // height: 500px;
-}
-
 .hidden {
-    // opacity: 0%;
-    // display: none;
     visibility: hidden;
-    // transition: 2s ease-out;
     transition: visibility 0s ease-out
-    // animation: hide-animation 2s ease-out infinite alternate;
 }
 
 
