@@ -52,8 +52,11 @@
 @media (max-width: 536px) {
     .footer__container .quick__menu .icon__title {
         margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .quick__menu .icon {
-        visibility: hidden;
+        display: none;
     }
 }
