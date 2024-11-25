@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.0176dcc8.css",
-    "main.js": "/static/js/main.dc994355.js",
+    "main.js": "/static/js/main.163eaa76.js",
     "static/media/webgallery.png": "/static/media/webgallery.f3ebd05825cdb511335b.png",
     "static/media/Myoutube.png": "/static/media/Myoutube.9103008b9ef08c667c21.png",
     "static/media/project_stock2.png": "/static/media/project_stock2.044d033d8f25ddc480bc.png",
     "static/media/beatcode_game_screen.png": "/static/media/beatcode_game_screen.9f2c27f57e4bd9e4522a.png",
-    "static/media/resume.pdf": "/static/media/resume.ea549b6d874f81e068f8.pdf",
+    "static/media/resume.pdf": "/static/media/resume.047b942ef5f5c7572b24.pdf",
     "static/media/uoft.png": "/static/media/uoft.90852f82d39e65cee6cc.png",
     "static/media/taq-icon.png": "/static/media/taq-icon.f62c26f197b12adbdb42.png",
     "static/media/star1.png": "/static/media/star1.23004bc20980b2398f51.png",
@@ -18,10 +18,10 @@
     "static/media/menubar.svg": "/static/media/menubar.f0a0f67e5762d66d066aea7aa9caa163.svg",
     "index.html": "/index.html",
     "main.0176dcc8.css.map": "/static/css/main.0176dcc8.css.map",
-    "main.dc994355.js.map": "/static/js/main.dc994355.js.map"
+    "main.163eaa76.js.map": "/static/js/main.163eaa76.js.map"
   },
   "entrypoints": [
     "static/css/main.0176dcc8.css",
-    "static/js/main.dc994355.js"
+    "static/js/main.163eaa76.js"
   ]
 }
